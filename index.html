@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>(❁´◡`❁)</title>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css" />
+    
+    
+  </head>
+  <body>
+    
+    <header>
+      <span id="nav-logo">(●'◡'●)</span>
+      <nav id="main-nav">
+      </nav>
+    </header>
+
+    <main>
+      <!-- Stats -->
+      <ul class="stats">
+        <li class="stats__stat-container">
+          <div class="stats__stat-label">Score:</div>
+          <div id="score" class="stats__stat-value">0</div>
+        </li >
+        <li class="stats__stat-container">
+          <div class="stats__stat-label">Level:</div>
+          <div id="level" class="stats__stat-value">1</div>
+        </li >
+        <li class="stats__stat-container">
+          <div class="stats__stat-label">Question:</div>
+          <div id="question-number" class="stats__stat-value">1/10</div>
+        </li >
+      </ul>
+
+      <div id="trivia-container">
+       
+      </div>
+
+
+
+    </main>
+
+    <footer>© J Phetoane, 2023</footer>
+
+    <!-- Cloning the list Items. -->
+    <template id="trivia-item-template">
+      <div class="trivia-item">
+        <p class="trivia-item__question"></p>
+        <ul class="trivia-item__answers">
+          <li ><button class="trivia-item__button"></button></li>
+          <li><button class="trivia-item__button"></button></li>
+          <li><button class="trivia-item__button"></button></li>
+          <li><button class="trivia-item__button"></button></li>
+        </ul>
+      </div>
+    </template>
+
+
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
